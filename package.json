@@ -1,0 +1,22 @@
+{
+  "name": "@codehands/contracts",
+  "version": "0.1.0",
+  "description": "Shared types, event names and session states for Code Hands AI",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "packageManager": "pnpm@10.17.1",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "vitest": "^3.2.4"
+  }
+}
