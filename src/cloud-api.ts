@@ -43,3 +43,8 @@ export interface CloudSync {
   push(req: PushRequest): Promise<PushResult>;
   pull(req: PullRequest): Promise<PullResult>;
 }
+
+export interface CloudDevices {
+  listDevices(): Promise<{ devices: CloudDevice[] }>;
+  revokeDevice(id: string): Promise<{ ok: true }>;
+}
